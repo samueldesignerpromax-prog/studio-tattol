@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 
 export default function Home() {
   const [artistas] = useState([
-    { id: 1, nome: "Mike "Ink" Rodriguez", especialidade: "Realismo 3D", experiencia: "10 anos", imagem: "/images/artista1.jpg", rating: 5 },
-    { id: 2, nome: "Ana "Shadow" Costa", especialidade: "Preto e Cinza", experiencia: "8 anos", imagem: "/images/artista2.jpg", rating: 5 },
-    { id: 3, nome: "Lucas "Black" Santos", especialidade: "Old School", experiencia: "12 anos", imagem: "/images/artista3.jpg", rating: 5 },
+    { id: 1, nome: "Mike Ink Rodriguez", especialidade: "Realismo 3D", experiencia: "10 anos", imagem: "/images/artista1.jpg", rating: 5 },
+    { id: 2, nome: "Ana Shadow Costa", especialidade: "Preto e Cinza", experiencia: "8 anos", imagem: "/images/artista2.jpg", rating: 5 },
+    { id: 3, nome: "Lucas Black Santos", especialidade: "Old School", experiencia: "12 anos", imagem: "/images/artista3.jpg", rating: 5 },
   ])
 
   const trabalhos = [
@@ -129,7 +129,7 @@ export default function Home() {
                     {'★'.repeat(artista.rating)}
                   </div>
                   <Link href={`/artistas/${artista.id}`}>
-                    <button className="btn-outline text-sm">Ver Portfólio →</button>
+                    <button className="border border-gold text-gold px-6 py-2 rounded-md transition-all duration-300 hover:bg-gold hover:text-ink">Ver Portfólio →</button>
                   </Link>
                 </div>
               </motion.div>
